@@ -4,6 +4,6 @@ public class TreeRecursion {
             return;
         System.out.print(x+" ");
         printTreeRecursion(x-1);
-        System.out.print(x +" ");;
+        System.out.print(x +" ");
     }
 }
