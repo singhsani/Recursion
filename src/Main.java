@@ -1,4 +1,4 @@
-
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,21 +35,20 @@ public class Main {
 //        }else{
 //            System.out.println("data are not found");
 //        }
-        int[] arr={2,1,4,6,3,6,7,4};
+        //int[] arr={2,1,4,6,3,6,7,4};
 //        BubbleSortUsingRecursion bubbleSortUsingRecursion=new BubbleSortUsingRecursion();
 //        bubbleSortUsingRecursion.bubbleSort(arr,arr.length-1);
-        MargeSortUsingRecursion margeSortUsingRecursion=new MargeSortUsingRecursion();
-        MargeSortUsingRecursion.divideConquer(arr,0,arr.length-1);
-        for(int i=0;i<arr.length;i++)
-        System.out.print(arr[i]+" ");
+//        QuickSortUsingRecursion quickSortUsingRecursion=new QuickSortUsingRecursion();
+//        quickSortUsingRecursion.quickSort(arr,0,arr.length-1);
+//        MargeSortUsingRecursion margeSortUsingRecursion=new MargeSortUsingRecursion();
+//        MargeSortUsingRecursion.divideConquer(arr,0,arr.length-1);
+//        for(int i=0;i<arr.length;i++)
+//        System.out.print(arr[i]+" ");
 //        LowerBoundIndex lowerBoundIndex=new LowerBoundIndex();
 //        System.out.println(lowerBoundIndex.lowerBoundIndex(arr,arr.length-1,0,arr.length-1,4));
        // UpperBoundIndexing upperBoundIndexing=new UpperBoundIndexing();
         // System.out.println(upperBoundIndexing.upperBound(arr,arr.length,0,arr.length-1,4));
-
-
 //        ReverseString str=new ReverseString();
-//
 //        System.out.println(str.reverseString("Welcome",0,6));
 //        PailendromOfString pailendromOfString=new PailendromOfString();
 //        if(pailendromOfString.isPailendrom("bookkoob",0,7)){
@@ -59,5 +58,11 @@ public class Main {
 //        }
 //        PowerOfTwo power=new PowerOfTwo();
 //        System.out.println(power.powerOfTwos(3,4));
+        int[] nums={1,2,3};
+        SubsetOfArray subsetOfArray=new SubsetOfArray();
+       List<List<Integer>> arr=subsetOfArray.subsets(nums);
+       for(int i=0;i<arr.size();i++){
+           System.out.println(arr.get(i));
+       }
     }
 }
